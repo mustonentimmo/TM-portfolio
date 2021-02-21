@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timmo Mustonen | Software-developer</title>
+    <script src="https://kit.fontawesome.com/8d5df94139.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container" data-scroll-container>
+        <section data-scroll-section>
+            <div class="nav">
+                <div>Timmo Mustonen.</div>
+            </div>
+            <div class="content" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">
+                <h1 data-scroll-class="fade-out">WEB-DEVELOPER and HOBBY PHOTOGRAPHER</h1>
+            </div>
+            <div class="social-media" data-scroll>
+                <div class="row">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-flickr"></i>
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </section>  
+        <section data-scroll-section>
+            <h1 style="font-family: le-monde-livre-std, serif; font-size: 4rem;font-style: italic;" data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal">Skills</h1>
+            <div class="skills">
+                
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6"  data-scroll-direction="vertical">HTML</h2> 
+                    </div>
+               
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">CSS</h2>
+                    </div>
+                
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">JavaScript</h2>
+                    </div>
+                
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">MySQL</h2>
+                    </div>
+              
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">PHP</h2>
+                    </div>
+               
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">Jquery</h2>
+                    </div>
+
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">AJAX</h2>
+                    </div>
+                    
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">Python</h2>
+                    </div>
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">Photoshop</h2>
+                    </div>
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">Figma</h2>
+                    </div>
+                    <div class="nest">
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="6" data-scroll-direction="vertical">Lightroom</h2>
+                    </div>
+            </div>
+    
+        </section>
+        <section data-scroll-section>
+            <div class="content">
+                <h1>Projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit error vero eos eius molestias, fugit libero cumque nulla atque veritatis id, placeat saepe. Ea saepe nam tempora asperiores molestiae dolores?</p>
+            </div>
+        </section>
+        <section data-scroll-section>
+            <div class="content">
+                <h1>About me</h1>
+                <p>
+                    I grew up in a small country called Estonia, which is located at the northern part of Europe. Growing up, I have always enjoyed everything creative. I started with taking and editing pictures (which is still my current passion to this day) and ended with making my first homepage, which I created in primary school as a final graduation assignment. My passion to it sky-rocketed even more, when I first got my hands on the Web Developer Online Course by Colt Steele, where I learned basics of front- and back-end developing. Eventually, when I got taste of it, I was eager to learn more about it.
+                </p>
+            </div>
+        </section>
+        <section data-scroll-section>
+            <div class="content">
+                <h1>Contact me</h1>
+                <a href="mailto:mustonentimmo@gmail.com">mustonentimmo@gmail.com</a>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+    <script>
+        const locoScroll = new LocomotiveScroll({
+            el: document.querySelector("[data-scroll-container]"),
+            smooth: true,
+            direction: 'horizontal',
+            lerp: 0.1,
+        });
+    </script>
+</body>
+</html>
