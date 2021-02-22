@@ -1,0 +1,274 @@
+@import url("https://use.typekit.net/sle2xsa.css");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Barlow", sans-serif;
+  font-size: 16.5px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+a {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  display: none; /* make scrollbar transparent */
+}
+.h-100 {
+  height: 100%;
+}
+body {
+  color: white;
+}
+section {
+  overflow: hidden;
+}
+.intro {
+  font-weight: 600 !important;
+}
+.intro .break {
+  font-size: 0.5em;
+  display: block;
+  font-weight: 600;
+}
+.intro .small {
+  font-size: 0.4em;
+  letter-spacing: 6px;
+}
+.nav {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+}
+.nav div {
+  margin: 0 auto;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem;
+  color: #a9a9a952;
+}
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.container section {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.container section:nth-child(1) {
+  background-image: url(/Public/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.container section .content {
+  max-width: 800px;
+  text-align: center;
+  padding: 4rem;
+}
+.container section .full-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  text-align: center;
+}
+.splide {
+  height: 100%;
+}
+.splide-track {
+  height: 100%;
+}
+.container section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.6rem;
+  opacity: 1;
+  position: relative;
+  z-index: 3;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.container section p {
+  line-height: 30px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  letter-spacing: 2px;
+  color: #8f8f8f;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 1.5rem;
+}
+.social-media {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  padding: 0.7rem;
+  border-top: 1px solid #ffffff26;
+}
+.fab {
+  opacity: 0.8;
+  font-size: 2rem;
+  padding: 0.4rem;
+}
+.fab:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid;
+  padding-left: 1em;
+}
+.skill {
+  font-size: 2rem;
+  color: gray !important;
+  font-weight: 200;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.fade-in {
+  opacity: 1;
+}
+.fade {
+  background: linear-gradient(
+    to top,
+    black 0%,
+    rgba(0, 0, 0, 0.738) 19%,
+    rgba(0, 0, 0, 0.541) 34%,
+    rgba(0, 0, 0, 0.382) 47%,
+    rgba(0, 0, 0, 0.278) 56.5%,
+    rgba(0, 0, 0, 0.194) 65%,
+    rgba(0, 0, 0, 0.126) 73%,
+    rgba(0, 0, 0, 0.075) 80.2%,
+    rgba(0, 0, 0, 0.042) 86.1%,
+    rgba(0, 0, 0, 0.021) 91%,
+    rgba(0, 0, 0, 0.008) 95.2%,
+    rgba(0, 0, 0, 0.002) 98.2%,
+    transparent 100%
+  );
+  z-index: 1;
+}
+.project {
+  padding: 1rem;
+}
+.project-description {
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.vw-200 {
+  width: 200vw;
+}
+.image {
+  background: url("/Public/img/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center, center;
+}
+.about-me {
+  width: 100%;
+}
+.container section:nth-child(3) {
+  min-width: 200vw;
+}
+.container section:nth-child(4) {
+  min-width: 200vw;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container section:nth-child(3) {
+    min-width: 100vw;
+  }
+  .container section:nth-child(4) {
+    min-width: 100vw;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .nav div {
+    font-size: 2.5rem;
+  }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1600px) {
+  .skill {
+    font-size: 2.5rem;
+  }
+
+  .container section p {
+    font-size: 1.1rem;
+  }
+  .container section .content {
+    max-width: 1000px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  a {
+    font-size: 2rem;
+  }
+  .nav div {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .container section:nth-child(4) p {
+    padding: 0 2rem;
+  }
+  .skill {
+    font-size: 3rem;
+  }
+  .container section h1 {
+    font-size: 5.5rem !important;
+  }
+  .container section p {
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
