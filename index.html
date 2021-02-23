@@ -6,9 +6,10 @@
     <title>Timmo Mustonen | Software-developer</title>
     <script src="https://kit.fontawesome.com/8d5df94139.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="stylesheet" href="/Public/css/main.css">
+    <link rel="stylesheet" href="/public/css/main.css">
 </head>
 <body>
+    <div id="preload"></div>
     <div class="container" data-scroll-container>
         <section data-scroll-section>
             <div class="nav">
@@ -28,49 +29,48 @@
             <div class="skills">
                 
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">HTML</h2> 
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">HTML</h2> 
                     </div>
                
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">CSS</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">CSS</h2>
                     </div>
                 
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">JavaScript</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">JavaScript</h2>
                     </div>
                 
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">MySQL</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">MySQL</h2>
                     </div>
               
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">PHP</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">PHP</h2>
                     </div>
                
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">Jquery</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">Jquery</h2>
                     </div>
 
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">AJAX</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">AJAX</h2>
                     </div>
                     
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">Python</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">Python</h2>
                     </div>
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">Photoshop</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">Photoshop</h2>
                     </div>
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">Figma</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">Figma</h2>
                     </div>
                     <div class="nest">
-                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="7" data-scroll-direction="vertical">Lightroom</h2>
+                        <h2 class="skill" data-scroll-class="fade-in" data-scroll-repeat data-scroll data-scroll-speed="9" data-scroll-direction="vertical">Lightroom</h2>
                     </div>
             </div>
-    
         </section>
-        <section data-scroll-section>
+        <section class="vw-200" data-scroll-section>
             <div class="full-screen" style="align-items: start;">
                 <div class="content">
                     <h1 data-scroll data-scroll-class="fade-in" class="opacity">Projects</h1>
@@ -100,10 +100,17 @@
                 </div>
             </div>
         </section>
-        <section class="vw-200" data-scroll-section>
+        <section data-scroll-section style="justify-content: start;">
+            <div class="content">
+                <h1>internship</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, laborum corrupti. Adipisci ipsam officiis tempora exercitationem nemo. Ab, necessitatibus quisquam quo temporibus provident, nesciunt suscipit deserunt excepturi voluptas dolor amet.</p>
+            </div>
+        </section>
+        <section id="about-me" class="vw-200" data-scroll-section>
             <div class="row h-100">
                 <div class="col">
                     <div class="image">
+                        <div class="fade"></div>
                     </div>
                 </div>
                 <div class="col">
@@ -113,7 +120,6 @@
                     </p>
                 </div>
             </div>
-            
         </section>
         <section data-scroll-section>
             <div class="content">
@@ -127,9 +133,16 @@
             </div>
         </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>  
+    <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
     <script>
+        let preloader = document.getElementById('preloader');
+
+        var queue = new createjs.LoadQueue(false);
+
+        queue.on("fileload", filesLoaded);
+        queue.loadFile("/public/img/profile.jpg");
+        queue.loadFile("/public/img/bg.jpg");
         const locoScroll = new LocomotiveScroll({
             el: document.querySelector("[data-scroll-container]"),
             smooth: true,
@@ -137,6 +150,11 @@
             lerp: 0.1,
         });
 
+        queue.on("progress", event => {
+            console.log(event);
+        })
+
+        function filesLoaded() {};
     </script>
 </body>
 </html>

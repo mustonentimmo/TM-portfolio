@@ -17,7 +17,7 @@ a {
   font-size: 1.5rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -102,7 +102,7 @@ section {
   height: 100%;
 }
 .container section h1 {
-  font-size: 3.5rem;
+  font-size: 1.9rem;
   margin-bottom: 0.6rem;
   opacity: 1;
   position: relative;
@@ -130,19 +130,19 @@ section {
 .fab {
   opacity: 0.8;
   font-size: 2rem;
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
 .fab:hover {
   cursor: pointer;
   opacity: 1;
   transform: scale(1.2);
-  transition: transform 0.2s;
+  transition: transform 0.4s ease;
 }
 .skills {
   display: flex;
   flex-direction: column;
   border-left: 1px solid;
-  padding-left: 1em;
+  padding-left: 1.5em;
 }
 .skill {
   font-size: 2rem;
@@ -176,8 +176,6 @@ section {
 .project {
   padding: 1rem;
 }
-.project-description {
-}
 .col {
   display: flex;
   flex-direction: column;
@@ -190,7 +188,7 @@ section {
   flex-direction: row;
 }
 .vw-200 {
-  width: 200vw;
+  min-width: 200vw !important;
 }
 .image {
   background: url("/Public/img/profile.jpg");
@@ -203,13 +201,26 @@ section {
 .about-me {
   width: 100%;
 }
-.container section:nth-child(3) {
-  min-width: 200vw;
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background: black;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem;
 }
-.container section:nth-child(4) {
-  min-width: 200vw;
+.fade {
+  background: black;
+  height: 151px;
+  width: 100%;
+  position: relative;
+  top: 100%;
+  box-shadow: 0 0 100px 100px black;
 }
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
@@ -221,11 +232,8 @@ section {
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .container section:nth-child(3) {
-    min-width: 100vw;
-  }
-  .container section:nth-child(4) {
-    min-width: 100vw;
+  .vw-200 {
+    min-width: 100vw !important;
   }
 }
 /* X-Large devices (large desktops, 1200px and up) */
@@ -233,21 +241,20 @@ section {
   .nav div {
     font-size: 2.5rem;
   }
+  h2 {
+    font-size: 2rem;
+  }
 }
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1600px) {
   .skill {
     font-size: 2.5rem;
   }
-
   .container section p {
     font-size: 1.1rem;
   }
   .container section .content {
     max-width: 1000px;
-  }
-  h2 {
-    font-size: 3rem;
   }
   a {
     font-size: 2rem;
