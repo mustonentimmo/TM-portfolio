@@ -15,9 +15,13 @@ html {
 }
 a {
   font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
 }
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -34,6 +38,7 @@ section {
 }
 .intro {
   font-weight: 600 !important;
+  text-shadow: 1px 5px 3px #a6a6a6;
 }
 .intro .break {
   font-size: 0.5em;
@@ -112,6 +117,8 @@ section {
   color: #8f8f8f;
   text-align: center;
   font-size: 1rem;
+}
+#about-me p {
   padding: 0 1.5rem;
 }
 .social-media {
@@ -132,6 +139,11 @@ section {
   transform: scale(1.2);
   transition: transform 0.4s ease;
 }
+#exp-title {
+  font-family: le-monde-livre-std, serif;
+  font-size: 1.8rem;
+  font-style: italic;
+}
 .skills {
   display: flex;
   flex-direction: column;
@@ -139,7 +151,7 @@ section {
   padding-left: 1.5em;
 }
 .skill {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: gray !important;
   font-weight: 200;
   opacity: 0;
@@ -169,6 +181,23 @@ section {
 }
 .project {
   padding: 1rem;
+}
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.project h4 {
+  font-size: 1.3rem;
+  color: gray;
+  font-weight: 400;
+  margin-bottom: 1.3rem;
+}
+.project a {
+  font-size: 1.3rem;
+}
+.content .project p {
+  font-size: 1rem;
+  padding: 0;
 }
 .col {
   display: flex;
@@ -236,6 +265,7 @@ section {
   top: 100%;
   box-shadow: 0 0 100px 100px black;
 }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
@@ -244,6 +274,12 @@ section {
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .skill {
+    font-size: 2.5rem;
+  }
+  #exp-title {
+    font-size: 3.5rem;
+  }
   #preload svg {
     width: 400px;
   }
@@ -271,7 +307,7 @@ section {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1600px) {
   .skill {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   .container section p {
     font-size: 1.1rem;
