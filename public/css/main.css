@@ -223,6 +223,15 @@ section {
 .about-me {
   width: 100%;
 }
+.clouds {
+  top: 0;
+  position: absolute;
+  background: rgba(199, 210, 214, 0.658);
+  filter: blur(130px);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
 #preload {
   width: 100%;
   height: 100vh;
